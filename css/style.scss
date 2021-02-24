@@ -229,7 +229,7 @@ main{
                    .List_active{
                     a{
                         img{
-                            filter: contrast(1);
+                            filter: contrast(1)drop-shadow(0px 0px 3px #061bb05e);
                             transition: $transition;
                             transform: scale(1.1);
                         }
