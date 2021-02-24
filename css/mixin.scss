@@ -1,0 +1,59 @@
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6,li{
+    font-family: 'Asap-SemiBold';
+}
+// li{
+//     list-style-type: none;
+// }
+p{
+    font-family: 'FiraSans-Regular';
+}
+
+ li{
+     list-style-type: none;
+ }
+
+@mixin flex {
+    display: $lex;
+    justify-content: $mid;
+    align-items: $mid;
+    flex-wrap: wrap;
+}
+
+@mixin container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// --------Color-----of------Websites------//
+
+$site-color:#061BB0;
+$fff:#ffffff;
+$lex:flex;
+$mid:center;
+$wrp:wrap;
+$Fend:flex-end;
+$between:space-between;
+$around:space-around;
+$inherit:inherit;
+$N-wrp:nowrap;
+$none:none;
+$cap:capitalize;
+$upper:uppercase;
+$end:flex-end;
+$bld:bold;
+$blder:bolder;
+$rel:relative;
+$abs:absolute;
+$hide:hidden; 
+$cover:cover;
+$no-rpt:no-repeat;
+$heading:'Asap-SemiBold';
+$paragraph:'FiraSans-Regular';
+$transition:all .3s ease-in-out;

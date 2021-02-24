@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-size: 15px;
+  color: #000000;
+  background: #fff;
+  font-family: 'FiraSans-Regular';
+  line-height: 1.5;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Asap-SemiBold';
+}
+
+p {
+  font-family: 'FiraSans-Regular';
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main header {
+  width: 100%;
+  padding: .8rem 0;
+}
+
+main header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .header-content .logo img {
+  max-width: 100%;
+}
+
+main header .header-content nav {
+  width: 90%;
+}
+
+main header .header-content nav .nav-item-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .header-content nav .nav-item-wrp .L01 {
+  width: 70%;
+}
+
+main header .header-content nav .nav-item-wrp .R01 {
+  width: 21%;
+}
+
+main header .header-content nav .nav-item-wrp .R01 ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main header .header-content nav .nav-item-wrp .R01 ul li a {
+  color: #000 !important;
+}
+
+main header .header-content nav .nav-item-wrp .hvr-underline-from-center::before {
+  background: #ffffff;
+  height: 2px;
+}
+
+main header .header-content nav .nav-item-wrp .nav-cmn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main header .header-content nav .nav-item-wrp .nav-cmn ul li {
+  padding: .5rem 0;
+}
+
+main header .header-content nav .nav-item-wrp .nav-cmn ul li a {
+  font-size: 1.1em;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #ffffff;
+}
+
+main .Banner-Wrapper {
+  width: 100%;
+  position: relative;
+}
+
+main .Banner-Wrapper .bg-banr {
+  position: absolute;
+  right: 35vw;
+  bottom: 0;
+  width: 100vmax;
+  min-width: 680px;
+  height: 100vmax;
+  min-height: 680px;
+  border-radius: 68px;
+  overflow: hidden;
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  background: #061BB0;
+  z-index: -1;
+}
+
+main .Banner-Wrapper .bg-banr img {
+  width: 100%;
+  position: absolute;
+  top: auto;
+  bottom: 0px;
+  right: -115px;
+  height: auto;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  mix-blend-mode: hard-light;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  -webkit-animation: imgainme 24s linear infinite;
+          animation: imgainme 24s linear infinite;
+}
+
+@-webkit-keyframes imgainme {
+  0%, 100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    right: -200px;
+  }
+  50% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+@keyframes imgainme {
+  0%, 100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    right: -200px;
+  }
+  50% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+main .Banner-Wrapper .Banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft {
+  width: 70%;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+  font-size: 4em;
+  font-weight: bolder;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft .price-cmn {
+  display: none;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 1rem 3rem 1rem 0;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+  background: #ffffff;
+  padding: 1rem 3.5rem;
+  text-transform: capitalize;
+  color: #061BB0;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 1rem 0 0;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft .hvr-shutter-out-horizontal:hover {
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Lft .hvr-shutter-out-horizontal::before {
+  background: #061BB0;
+  border-radius: 5px;
+  color: #ffffff !important;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt {
+  width: 30%;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  width: 45px;
+  margin: 0 0 auto auto;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul li {
+  display: block;
+  padding: .5rem 0;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul li a {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul li a img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: contrast(0);
+          filter: contrast(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul li a img:hover {
+  -webkit-filter: opacity(0.58);
+          filter: opacity(0.58);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main .Banner-Wrapper .Banner-content .Bnr-Rgt ul .List_active a img {
+  -webkit-filter: contrast(1);
+          filter: contrast(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
