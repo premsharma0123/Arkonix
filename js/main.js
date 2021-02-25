@@ -9,6 +9,42 @@ $(document).ready(function(){
     }
   });
 
+    // add & Remove class
+    $(".C-item-cmn01").click(function () {
+    if(!$(this).hasClass('CurrencyActive'))
+    {    
+        $(".C-item-cmn01.CurrencyActive").removeClass("CurrencyActive");
+        $(this).addClass("CurrencyActive");        
+    }
+    });
+
+//   ------language-----//
+$('.Language').click(function(){
+    $('.lang-model').slideToggle();
+    $(this).toggleClass('lang-wrp');
+    $('.Product-List').slideUp();
+    $('.Product-wrp').removeClass('Product-active');
+});
+
+$(".Banner-Wrapper").click(function(){
+    $('.lang-model').slideUp();
+    $('.Product-List').slideUp();
+    $('.Language').removeClass('lang-wrp');
+    $('.Product-wrp').removeClass('Product-active');
+})
+// ---end--here----//
+
+
+// ---product-wrp========-
+
+$('.Product-wrp').click(function(){
+    $('.Product-List').slideToggle();
+    $(this).toggleClass('Product-active'); 
+    $('.lang-model').slideUp();
+    $('.Language').removeClass('lang-wrp');
+}); 
+
+// ---end--here----//
 
 // ----price---list-----//
 $(".a1").click(function(){
@@ -52,3 +88,12 @@ $(".a8").click(function(){
 })
   
   
+function openList(ListName) {
+    var i;
+    var x = document.getElementsByClassName("quantity-wrp");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    document.getElementById(ListName).style.display = "block";  
+  }
+  //-----temp--list---//
