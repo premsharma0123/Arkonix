@@ -34,6 +34,10 @@ body {
   line-height: 1.5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -49,6 +53,46 @@ p {
 
 li {
   list-style-type: none;
+}
+
+@-webkit-keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+@keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
 }
 
 .container {
@@ -162,11 +206,15 @@ main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0 5px 7px -2px #d6d6d6ba;
+          box-shadow: 0 5px 7px -2px #d6d6d6ba;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child .F-item01 {
   padding: 0 0 0 .8rem;
-  border-right: 1px solid #999999a6;
+  border-right: 1px solid #99999924;
 }
 
 main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child .item-cmn {
@@ -621,7 +669,7 @@ main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li:nth-child(2), main
 }
 
 main .Market-Strategy_wrapper {
-  padding: 3rem 0 0;
+  padding: 5rem 0 0;
   width: 100%;
 }
 
@@ -900,6 +948,7 @@ main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-
 main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 h3 sup {
   font-size: 14px;
   vertical-align: super;
+  text-decoration: line-through;
 }
 
 main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .CurrencyActive {
@@ -973,46 +1022,6 @@ main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quanti
           animation: backgrdanime 3s linear infinite;
   top: 0;
   left: 0%;
-}
-
-@-webkit-keyframes backgrdanime {
-  0% {
-    width: 0;
-    background-position-x: -300px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  99% {
-    width: 100%;
-    background-position-x: 300px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-@keyframes backgrdanime {
-  0% {
-    width: 0;
-    background-position-x: -300px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  99% {
-    width: 100%;
-    background-position-x: 300px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
 }
 
 main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content {
@@ -1115,6 +1124,8 @@ main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quanti
 main .About-wrapper {
   width: 100%;
   background: #EEBA2B;
+  overflow: hidden;
+  margin: 5rem 0;
 }
 
 main .About-wrapper .About-content-wrp {
@@ -1138,12 +1149,82 @@ main .About-wrapper .About-content-wrp .About-child-cnt {
           justify-content: space-between;
 }
 
+main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
 main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 {
   width: 48%;
 }
 
+main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 h2 {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+}
+
+main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 p {
+  font-size: 1em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.7;
+  padding: .5rem 0;
+}
+
+main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #061BB0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
+
 main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
-  max-width: 100%;
+  max-width: 80%;
+  -webkit-animation: swing ease-in-out 4s infinite alternate;
+          animation: swing ease-in-out 4s infinite alternate;
+  -webkit-transform-origin: center -20px;
+          transform-origin: center -20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    -webkit-filter: drop-shadow(1px 2px 4px #000);
+            filter: drop-shadow(1px 2px 4px #000);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  100% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    -webkit-filter: drop-shadow(1px 2px 4px #000);
+            filter: drop-shadow(1px 2px 4px #000);
+  }
 }
 
 main .About-wrapper .About-content-wrp .About-child2 {
@@ -1151,5 +1232,735 @@ main .About-wrapper .About-content-wrp .About-child2 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+main footer {
+  background: #2D2D2D;
+  width: 100%;
+  z-index: 4;
+  position: relative;
+}
+
+main footer::before {
+  content: '';
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url(../image/footer-bg.png) repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: bfranime 90s linear infinite;
+          animation: bfranime 90s linear infinite;
+}
+
+@-webkit-keyframes bfranime {
+  0%, 100% {
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-position-x: -600px;
+  }
+  50% {
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-position-x: 600px;
+  }
+}
+
+@keyframes bfranime {
+  0%, 100% {
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-position-x: -600px;
+  }
+  50% {
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    background-position-x: 600px;
+  }
+}
+
+main footer .footer-content-wrp .Ft-logo-heading {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+main footer .footer-content-wrp .Ft-logo-heading img {
+  max-width: calc(100% + 100px);
+}
+
+main footer .footer-content-wrp .footer-cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-left {
+  width: 70%;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right {
+  width: 20%;
+  display: inline-block !important;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head {
+  padding: 0 0 1.3rem;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head h2 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 0 .5rem;
+  position: relative;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head h2::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  position: absolute;
+  -webkit-animation: Brdanime 3s linear infinite;
+          animation: Brdanime 3s linear infinite;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure {
+  margin: .5rem 1rem 0 0;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure img {
+  max-width: 60%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
+  width: 20%;
+  margin: 0 auto;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head {
+  padding: 0 0 1.3rem;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head h2 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 0 .5rem;
+  position: relative;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head h2::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  position: absolute;
+  -webkit-animation: Brdanime 3s linear infinite;
+          animation: Brdanime 3s linear infinite;
+}
+
+@-webkit-keyframes Brdanime {
+  0% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  99% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@keyframes Brdanime {
+  0% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  99% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: .5rem 0;
+  display: inline-block;
+  color: #999;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding-left: 4px;
+  color: #eee;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 ul li .hvr-underline-from-left::before {
+  background: #eee;
+  height: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 address {
+  padding: 1.5rem 0 0;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 address p {
+  font-size: 1em;
+  word-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  color: #999;
+  padding: 0 0 1rem;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 address a {
+  font-size: 1em;
+  word-spacing: 1px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0 0 .4rem;
+  display: inline-block;
+}
+
+main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 address a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+main footer .copyright-wrp {
+  width: 100%;
+  padding: 1rem 0;
+  background: #222222b5;
+  text-align: center;
+  margin: 2.5rem 0 0;
+}
+
+main footer .copyright-wrp .copyright-content p {
+  color: #D9D9D9;
+  text-transform: capitalize;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+main footer .copyright-wrp .copyright-content p a {
+  color: #D9D9D9;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+main footer .copyright-wrp .copyright-content p a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: .77;
+  text-decoration: underline;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .bg-banr {
+  right: 34vw;
+  bottom: 0;
+  width: 113vmax;
+  height: 59vmax;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Lft {
+  width: 50%;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt {
+  width: 30%;
+  border-left: 1px solid #99999961;
+  padding: .0rem 0 .5rem 1rem;
+  background: rgba(238, 238, 238, 0.301);
+  overflow: hidden;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li p {
+  padding-left: 0rem;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer {
+  position: relative;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .remaining {
+  background: #EEBA2B;
+  padding: 4rem 4rem .5rem;
+  text-align: center;
+  right: -84px;
+  top: -32px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  position: absolute;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .remaining p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .remaining p span {
+  font-weight: bold;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer h2 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #000;
+  padding: 1rem 0 0;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .p1 {
+  font-size: 1.1em;
+  padding: .8rem 1rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #ffffff;
+  font-weight: bolder;
+  margin: 0 0 1rem;
+  background: #EEBA2B;
+  position: relative;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .p1::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: #eeeeee94;
+  position: absolute;
+  -webkit-animation: backgrdanime 3s linear infinite;
+          animation: backgrdanime 3s linear infinite;
+  top: 0;
+  left: 0%;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer a {
+  padding: .9rem 1.4rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background: #061BB0;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer a .fa-arrow-alt-circle-right {
+  color: #ffffff;
+  font-size: 1.3em;
+  margin: 0 1rem 0 0;
+  vertical-align: middle;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .hvr-bounce-to-top::before {
+  background: #EEBA2B;
+  border-radius: 5px;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 {
+  padding: .8rem 0 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 {
+  font-size: 2.5em;
+  color: #2d2d2d;
+  font-family: "fatfrank", sans-serif;
+  font-weight: bold;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 sup {
+  font-size: 22px;
+  text-decoration: line-through;
+  vertical-align: top;
+  padding: .5rem;
+}
+
+.BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h4 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  padding-right: 3.5rem;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper {
+  padding: 3rem 0;
+  background: #eee;
+  margin: 5rem 0 0;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 3rem;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figure {
+  width: 100px;
+  text-align: center;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figure img {
+  max-width: 60%;
+  text-align: right;
+  -webkit-animation: imgaime 3s linear infinite;
+          animation: imgaime 3s linear infinite;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figcaption h2 {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figcaption p {
+  font-size: 1.099em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+  padding: .9rem 0;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Right p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  word-spacing: 1px;
+  color: #000;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Right .grp-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1.1rem;
+  padding: .9rem 0;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Right .grp-img figure img {
+  max-width: 80%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Right .grp-img figure img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+  padding: 3rem 0 0;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr {
+  background: #ffffff;
+  padding: 0 0 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .p2 {
+  font-size: 15px;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #ffffff;
+  font-weight: bolder;
+  margin: 0 0 1rem;
+  background: #EEBA2B;
+  position: relative;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .p2::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: #eeeeee94;
+  position: absolute;
+  -webkit-animation: backgrdanime 3s linear infinite;
+          animation: backgrdanime 3s linear infinite;
+  top: 0;
+  left: 0%;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading {
+  padding: .7rem 1rem;
+  background: #4a4a4a;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  position: relative;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading h2 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #ffffff;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading .remaining {
+  background: #EEBA2B;
+  padding: 4rem 4rem .5rem;
+  text-align: center;
+  right: -84px;
+  top: -32px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  position: absolute;
+  z-index: 2;
+  border-bottom-right-radius: 85% 150px;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading .remaining p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading .remaining p span {
+  font-weight: bold;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt {
+  padding: 0 1rem;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt p {
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+  font-size: 1em;
+  padding: 0 0 .4rem;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt p b {
+  color: #000;
+  font-weight: bold;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt a {
+  padding: .7rem 1.2rem;
+  margin: 1.8rem 0 0;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  background: #061BB0;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt a .fa-arrow-alt-circle-right {
+  color: #ffffff;
+  font-size: 1.3em;
+  margin: 0 1rem 0 0;
+  vertical-align: middle;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt .hvr-bounce-to-top::before {
+  background: #EEBA2B;
+  border-radius: 5px;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn {
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button {
+  padding: 1.1rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+  color: #061bb0;
+  -webkit-box-shadow: 0 0 3px 2px #061bb01f;
+          box-shadow: 0 0 3px 2px #061bb01f;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0 0 1px 1px #061bb01f;
+          box-shadow: 0 0 1px 1px #061bb01f;
+}
+
+.BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button i.fas.fa-chevron-down {
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 0 .7rem 0 0;
 }
 /*# sourceMappingURL=style.css.map */

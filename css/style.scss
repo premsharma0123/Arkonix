@@ -31,7 +31,9 @@ body{
     font-family: 'FiraSans-Regular';
     line-height: 1.5;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 @import 'mixin';
 .container{
@@ -96,9 +98,12 @@ main{
                     @include flex;
                     align-items: $init;
                     justify-content: $between;
+                    box-shadow: 0 5px 7px -2px #d6d6d6ba;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
                     .F-item01{
                         padding: 0 0 0 .8rem;
-                        border-right: 1px solid #999999a6; 
+                        border-right: 1px solid #99999924; 
                       }
                      .item-cmn{
                          width: 48%;
@@ -433,7 +438,7 @@ main{
 
 // <!-- Market--strategy--section-->
 .Market-Strategy_wrapper{
-    padding: 3rem 0 0;
+    padding: 5rem 0 0;
     width: 100%;
     .Market-Str-content{
         width: 100%; 
@@ -594,6 +599,7 @@ main{
                   sup {
                     font-size: 14px;
                     vertical-align: super;
+                    text-decoration: line-through;
                  }
                 }
               }
@@ -654,33 +660,8 @@ main{
                     font-weight: $blder;
                     margin: 0 0 1rem; 
                     position: relative;
-                    &::before{
-                         content: '';
-                         width: 0;
-                         height: 100%;
-                         background: #eeeeee94;
-                         position: absolute;
-                         animation: backgrdanime 3s linear infinite;
-                         top: 0;
-                         left: 0%;
-                    }
-                }
-                @keyframes backgrdanime {
-                    0%{
-                        width: 0;
-                        background-position-x: -300px;
-                        transition: $transition;
-                    }
-                    99%{
-                        width: 100%;
-                        background-position-x: 300px;
-                        transition: $transition; 
-                    }
-                    100%{
-                        opacity: 0;
-                        transition: $transition;
-                    }
-                }
+                    @include bfr;
+                } 
             }
             .quantity-content{
                 @include flex;
@@ -770,17 +751,58 @@ main{
     .About-wrapper{
         width: 100%;
         background: #EEBA2B;
+        overflow: hidden;
+        margin: 5rem 0;
         .About-content-wrp{
             width: 100%;
             .About-child-cnt{
                 @include flex;
                 justify-content: $between;
+                .Abt01.abt-cmn01{
+                    >figure {
+                        transform: translateY(-60px);
+                    }
+                }
                 .abt-cmn01{
                     width: 48%;
+                    h2{
+                        font-size: 1.4em;
+                        text-transform: $cap;
+                        word-spacing: 1px;
+                        line-height: 1.5;
+                    }
+                    p{
+                        font-size: 1em;
+                        text-transform: $cap;
+                        word-spacing: 1px;
+                        line-height: 1.7;
+                        padding: .5rem 0;
+                    }
+                    a{
+                        display: $inline-b;
+                        text-transform: $cap;
+                        font-weight: $bld;
+                        font-size: 1.3em;
+                        color: $site-color;
+                        text-decoration: $none;
+                        transition: $transition;
+                        position: relative;
+                        &:hover{
+                            transition: $transition;  
+                            color: #000000;
+                        } 
+                    }
                     figure{
                         img{
-                            max-width: 100%;
+                            max-width: 80%;
+                            animation: swing ease-in-out 4s infinite alternate;
+                            transform-origin: center -20px;
+                            transition: $transition; 
                         }
+                    }
+                    @keyframes swing {
+                        0% { transform: rotate(3deg); }
+                        100% { transform: rotate(-3deg);     filter: drop-shadow(1px 2px 4px #000);}
                     }
                 }
             }
@@ -790,6 +812,561 @@ main{
         }
     }
 // <!-- endd---hereeeee---about ---sectionn --> 
+// --------Footer----------------//
+
+footer{
+    background: #2D2D2D;
+    width: 100%;
+    // margin: 5rem 0 0;
+    z-index: 4;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: url(../image/footer-bg.png)repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        animation: bfranime 90s linear infinite;
+        @keyframes bfranime {
+            0%,100%{
+                transition: all .8s ease-in-out;
+                background-position-x: -600px;
+            }
+            50%{
+                transition: all .8s ease-in-out;
+                background-position-x: 600px;
+            }
+        }
+    }
+    .footer-content-wrp{
+        .Ft-logo-heading{
+            width: 100%;
+            text-align: center;
+            padding: 3rem 0;
+            img{
+                max-width: calc(100% + 100px);
+            }
+        }
+        // ---Footer---content--//
+        .footer-cnt{
+            @include flex;
+            justify-content: $between; 
+            align-items: $inherit;
+            .Ft-left{
+                width: 70%;
+            }
+            .Ft-Right{
+                width: 20%;
+                display: inline-block!important;
+                .Ft-head{
+                    padding: 0 0 1.3rem;
+                    h2{
+                        font-size: 1.3em;
+                        text-transform: $cap;
+                        line-height: 1.5;
+                        letter-spacing: 1px;
+                        word-spacing: 1px;
+                        font-weight: $bld;
+                        color: $fff; 
+                        display: inline-block;
+                        padding: 0 0 .5rem;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background: #fff;
+                            position: absolute;
+                            animation: Brdanime 3s linear infinite;
+                        }
+                    }
+                }
+                .social-wrp{
+                    @include flex;
+                    justify-content: flex-start;
+                    figure{
+                        margin:.5rem 1rem 0 0; 
+                        img{
+                            max-width: 60%;
+                            cursor: pointer;
+                            transition: $transition;
+                            &:hover{
+                                transition: $transition;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+             }
+            .Ft-Wrp{
+                @include flex;
+                justify-content: $between; 
+                align-items: $inherit;
+                .Ft-cmn01{
+                    width: 20%;
+                    margin: 0 auto;
+                    .Ft-head{
+                        padding: 0 0 1.3rem; 
+                        h2{
+                            font-size: 1.3em;
+                            text-transform: $cap;
+                            line-height: 1.5;
+                            letter-spacing: 1px;
+                            word-spacing: 1px;
+                            font-weight: $bld;
+                            color: $fff; 
+                            display: inline-block;
+                            padding: 0 0 .5rem;
+                            position: relative;
+                            &::before{
+                                content: '';
+                                width: 0;
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                background: #fff;
+                                position: absolute;
+                                animation: Brdanime 3s linear infinite;
+                            }
+                            @keyframes Brdanime {
+                                0%{
+                                    transition: $transition;
+                                }
+                                99%{
+                                    transition: $transition;
+                                    width: 100%;
+                                }
+                                100%{
+                                    opacity: 0;
+                                    transition: $transition;
+                                }
+                            }
+                        }
+                    }
+                    ul{
+                        li{
+                            a{
+                                text-decoration: $none;
+                                font-size: 1em;
+                                text-transform: $cap;
+                                line-height: 1.5;
+                                letter-spacing: 1px;
+                                word-spacing: 1px;
+                                transition: $transition;
+                                padding: .5rem 0;
+                                display: inline-block; 
+                                color: #999;
+                                &:hover{
+                                    transition: $transition;
+                                    padding-left: 4px;
+                                    color: #eee;
+                                }
+                            }
+                            .hvr-underline-from-left{
+                                &::before{
+                                    background: #eee;
+                                    height: 1px;
+                                    transition: $transition;
+                                }
+                            }
+                        }
+                    }
+                    address{
+                        padding: 1.5rem 0 0;
+                        p{
+                            font-size: 1em;
+                            word-spacing: 1px;
+                            text-transform: $cap;
+                            line-height: 1.5;
+                            color: #999;
+                            padding: 0 0 1rem;
+                        }
+                        a{
+                            font-size: 1em;
+                            word-spacing: 1px;
+                            text-transform: $cap;
+                            line-height: 1.5;
+                            color: #999;
+                            text-decoration: $none;
+                            transition: $transition;
+                            padding: 0 0 .4rem;
+                            display: $inline-b;
+                            &:hover{
+                                transition: $transition;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // end---Footer---content--//
+    }
+
+    // ---copy--right---section---//
+
+    .copyright-wrp{
+        width: 100%;
+        padding: 1rem 0;
+        background: #222222b5;
+        text-align: $mid;
+        margin: 2.5rem 0 0;
+      .copyright-content{ 
+          p{
+              color: #D9D9D9;
+              text-transform: $cap;
+              font-size: 13px;
+              line-height: 1.5;
+              letter-spacing: 1px;
+              word-spacing: 1px;
+              a{
+                color: #D9D9D9;
+                text-decoration: $none;transition: $transition;
+                cursor: pointer;
+                &:hover{
+                  transition: $transition;
+                  opacity: .77;
+                  text-decoration: underline;
+                }
+              }
+          }
+      }
+    }
+    // -----end--here----//
+} 
 }
 
+
+// --------------BTC-------Page--------------//
+//---*********************************-------//
+//---------------BTC-------Page--------------//
+
+.BTC-Main-Wrapper{ 
+    .Banner-Wrapper{
+        .bg-banr { 
+            right: 34vw;
+            bottom: 0;
+            width: 113vmax; 
+            height: 59vmax;    
+        }
+        .Banner-content{
+            .Bnr-Lft {
+                width: 50%;
+            }
+            .Bnr-Rgt{
+                width: 30%;//35%;
+                border-left: 1px solid #99999961;
+                // padding: .5rem 1rem;
+                padding: .0rem 0 .5rem 1rem;
+                background: rgba(238, 238, 238, 0.301);
+                overflow: hidden;
+                .payment-wrp{
+                    li{
+                        p{
+                            padding-left: 0rem;
+                        }
+                    }
+                }
+            } 
+            .btc-pay-offer{
+                position: relative;
+                .remaining{
+                    background: #EEBA2B;
+                    padding: 4rem 4rem .5rem;
+                    text-align: center;
+                    right: -84px;
+                    top: -32px;
+                    transform: rotate(50deg);
+                    position: absolute;
+                    p{
+                        font-size: 15px;
+                        color: $fff;
+                        span{font-weight: bold;}
+                    }
+                }
+                h2{
+                    font-size: 1.1em;
+                    text-transform: $cap;
+                    letter-spacing: 1px;
+                    word-spacing: 1px;
+                    color: #000;  padding: 1rem 0 0;
+                }
+                .p1{
+                    font-size: 1.1em;
+                    padding: .8rem 1rem;
+                    text-transform: $upper;
+                    line-height: 1.5;
+                    letter-spacing: 1px;
+                    word-spacing: 1px; 
+                    color: $fff;
+                    font-weight: $blder;
+                    margin: 0 0 1rem;
+                    background: #EEBA2B;
+                    position: relative;
+                    @include bfr;
+                }
+                a{
+                    padding: .9rem 1.4rem;
+                    border-radius: 5px; 
+                    display: $inline-b;
+                    font-size: 1.2em;
+                    text-transform: $upper;
+                    font-weight: $bld;
+                    color: $fff;
+                    background: #061BB0;
+                    cursor: pointer;
+                    position: $rel; 
+                    transition: $transition;
+                    text-decoration: $none;
+                    .fa-arrow-alt-circle-right {
+                        color: $fff;
+                        font-size: 1.3em;
+                        margin: 0 1rem 0 0;
+                        vertical-align: middle;
+                    }
+                }
+                .hvr-bounce-to-top{
+                   &::before{
+                    background: #EEBA2B;
+                    border-radius: 5px;
+                   }
+                }
+                }
+                .btP1{
+                    padding: .8rem 0 1.2rem;
+                    @include flex;
+                    justify-content:$between;
+                    h3{
+                      font-size: 2.5em;
+                      color: #2d2d2d;
+                      font-family: "fatfrank", sans-serif;
+                      font-weight: $bld;
+                      sup{
+                        font-size: 22px;
+                        text-decoration: line-through;
+                        vertical-align: top;
+                        padding: .5rem;
+                      }
+                    }
+                    h4{
+                        font-size: 1.3em;
+                        text-transform: $cap;
+                        line-height: 1.5; padding-right: 3.5rem;
+                    }
+                }
+            }
+        }   
+
+        // --------service---section----
+            .BTC-Service-wrapper{
+                padding: 3rem 0;
+                background: #eee;
+                margin: 5rem 0 0;
+                .Service-content{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-gap: 3rem;
+                    .Sr-Left{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        grid-gap: 1rem;
+                        align-items: center;
+                        figure{
+                            width: 100px;
+                            text-align: $mid;
+                            img{
+                                max-width: 60%;
+                                text-align: right;
+                                animation: imgaime 3s linear infinite;
+                            }
+                        }
+                        figcaption{
+                            h2{
+                                font-size: 1.4em;
+                                text-transform: $cap;
+                                line-height: 1.5;
+                                word-spacing: 1px;
+                            }
+                            p{
+                                font-size: 1.099em;
+                                text-transform: $cap;
+                                line-height: 1.5;
+                                word-spacing: 1px;
+                                padding: .9rem 0;
+                            }
+                        }
+                    }
+                    .Sr-Right{
+                        p{
+                            font-size: 1.1em;
+                            line-height: 1.5;
+                            word-spacing: 1px;
+                            color: #000;
+                        }
+                        .grp-img{
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            justify-content: flex-end;
+                            align-items: center;
+                            grid-gap: 1.1rem;
+                            padding: .9rem 0;
+                            figure{
+                                img{
+                                    max-width: 80%;
+                                    transition: $transition;
+                                    &:hover{
+                                        transition: $transition;
+                                        transform: scale(1.1);
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // ---service---end---
+                
+            // <!--Services---offer -->
+            .Serivces-offer-wrp{
+                .Srv-unorder{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-gap: 3rem; 
+                    padding: 3rem 0 0;
+                    .Srv-offr{
+                        background: $fff;
+                        padding: 0 0 1rem;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        .p2{
+                            font-size: 15px;
+                            padding: .5rem 1rem;
+                            text-transform: uppercase;
+                            line-height: 1.5;
+                            letter-spacing: 1px;
+                            word-spacing: 1px;
+                            color: #ffffff;
+                            font-weight: bolder;
+                            margin: 0 0 1rem;
+                            background: #EEBA2B;
+                            position: relative;
+                            @include bfr;
+                        }
+                      .srv-heading{
+                          padding: .7rem 1rem;
+                          background: #4a4a4a;
+                          border-top-right-radius: 5px;
+                          border-top-left-radius: 5px;
+                          position: relative;
+                          h2{
+                              font-size:1.3em;
+                              text-transform: $cap;
+                              line-height: 1.5;
+                              letter-spacing: 1px;
+                              word-spacing: 1px;
+                              color: $fff;
+                          }
+                          .remaining {
+                            background: #EEBA2B;
+                            padding: 4rem 4rem .5rem;
+                            text-align: center;
+                            right: -84px;
+                            top: -32px; 
+                            transform: rotate(  50deg );
+                            position: absolute;
+                            z-index: 2;
+                            border-bottom-right-radius: 85%150px;
+                            p {
+                                font-size: 15px;
+                                color: #ffffff;
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                      }
+                      .srv-cnt{
+                          padding: 0 1rem;
+                          p{
+                              text-transform: $cap;
+                              line-height: 1.5; 
+                              word-spacing: 1px;
+                              font-size: 1em;
+                              padding: 0 0 .4rem;
+                              b{
+                                  color: #000;
+                                  font-weight: $bld;
+                              }
+                          }
+                          a{
+                            padding: .7rem 1.2rem;
+                            margin: 1.8rem 0 0;
+                            border-radius: 5px;
+                            display: $inline-b;
+                            font-size: 1.2em;
+                            text-transform: $upper;
+                            font-weight: $bld;
+                            color: $fff;
+                            background: #061BB0;
+                            cursor: pointer;
+                            position: $rel; 
+                            transition: $transition;
+                            text-decoration: none;
+                            .fa-arrow-alt-circle-right {
+                                color: $fff;
+                                font-size: 1.3em;
+                                margin: 0 1rem 0 0;
+                                vertical-align: middle;
+                            }
+                          }
+                          .hvr-bounce-to-top{
+                           &::before{
+                            background: #EEBA2B;
+                            border-radius: 5px;
+                           }
+                          }
+                      }   
+                    }
+                }
+            }
+
+            // ---Services---offer---end---
+            .plans-btn{
+                padding: 2rem 0;
+                width: 100%;
+                text-align: center;
+                button{
+                    padding: 1.1rem 2rem;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                    font-size: 1.1em;
+                    color: #061bb0;
+                    box-shadow: 0 0 3px 2px #061bb01f;
+                    cursor: pointer;
+                    outline: none;
+                    transition: $transition;
+                    &:hover{
+                        transition: $transition;
+                        box-shadow: 0 0 1px 1px #061bb01f;
+                    }
+                    i.fas.fa-chevron-down {
+                        vertical-align: middle;
+                        font-size: 16px;
+                        margin: 0 .7rem 0 0;
+                    }
+                }
+            }
+       }
+ 
+}
  
