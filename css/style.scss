@@ -1580,7 +1580,7 @@ footer{
                           display: block;
                           color: #999;
                        }
-                      input{
+                      input,select{
                           width: 100%;
                           text-transform:$cap;
                           font-size:15px; 
@@ -1642,4 +1642,16 @@ footer{
 
 
 
-//---------end------Login-------Page-----here---------//
+//---------end------Login-------Page-----here-------------
+
+
+//--------Signup-------Page--------------//
+//---*********************************-------//
+//---------------Signup-------Page--------------//
+.Signup-Wrapper{
+    width: 100%;
+}
+
+//---------end------Signup-------Page-----here-------------
+
+@import 'dashboard';    

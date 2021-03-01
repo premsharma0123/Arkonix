@@ -1,0 +1,248 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Asap-SemiBold';
+}
+
+p {
+  font-family: 'FiraSans-Regular';
+}
+
+li {
+  list-style-type: none;
+}
+
+@-webkit-keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+@keyframes backgrdanime {
+  0% {
+    width: 0;
+    background-position-x: -300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  99% {
+    width: 100%;
+    background-position-x: 300px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+}
+
+.Dashboar-Wrapper .dashboard-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side {
+  width: 74px;
+  height: 100vh;
+  background: #061BB0;
+  padding: 2rem 0 1rem;
+  position: absolute;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 15%;
+  -webkit-box-shadow: 2px 0px 6px 2px #d4d4d480;
+          box-shadow: 2px 0px 6px 2px #d4d4d480;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side:hover .text-btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-item1 {
+  background: #00000021 !important;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #ffffff3b;
+  overflow: hidden;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li:hover {
+  background: #00000021 !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon {
+  padding: 0px;
+  width: 25px;
+  font-size: 1.4em;
+  margin-right: 1.3rem;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon img {
+  width: 50px;
+  -webkit-transform: translateX(-13px);
+          transform: translateX(-13px);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon img:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: inherit;
+          filter: inherit;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .text-btn {
+  font-size: 1.2em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .text-btn img {
+  max-width: 100%;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side {
+  width: 90%;
+  margin: 0 auto 0 9rem;
+  height: 100vh;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .right-heading {
+  color: #fff;
+  padding: 144px 39px 70px;
+  background: linear-gradient(45deg, #061bb0 33%, #ffffff 100%);
+  border-radius: 30px;
+  margin-top: -121px;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  margin-bottom: 90px;
+  position: relative;
+  font-weight: 700;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rh-child {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rh-child h2 {
+  font-size: 2.3em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+  font-weight: bold;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rh-child .breadcumb-btn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  padding: .5rem 0 0;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rh-child .breadcumb-btn ul li a {
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rh-child .breadcumb-btn ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: .77;
+}
+/*# sourceMappingURL=dashboard.css.map */

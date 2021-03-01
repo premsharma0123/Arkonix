@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/Hover-master/css/hover-min.css">
 </head>
 <body>
-    <main class="BTC-Main-Wrapper Login-Wrapper">
+    <main class="BTC-Main-Wrapper Login-Wrapper Signup-Wrapper">
         <header>
             <div class="container">
                 <div class="header-content">
@@ -82,43 +82,65 @@
         <div class="container">
             <div class="Banner-content">
                 <div class="Bnr-Lft Bnr-cmn01">
-                    <h2> Sign In to avail offers!</h2>
+                    <h2> Sign Up to avail offers!</h2>
                 </div> 
             </div>
         </div>
       </section>
   <!--Login--form-->
- <div class="Login-wrp">
+ <div class="Login-wrp SignUp-wrp">
      <div class="container">
          <div class="Login-content">
              <div class="Log01 Log-cmn">
                  <form  >
                      <div class="form-item-wrp">
                          <div class="Form-heading">
-                             <h2>Hello! let's get started</h2>
-                             <p>Sign in to continue.. </p>
+                             <h2>New here?</h2>
+                             <p>Registering is easy. It only takes a few steps </p>
                          </div>
                          <div class="form-item1 form-itemCmn">
-                            <label for="#">Email</label>
-                            <input type="text" name="email1" id="email" placeholder="Eg:abc@gmail.com" required>
+                            <label for="#">User Name</label>
+                            <input type="text" name="user1" id="user1" placeholder="User Name" required>
                          </div>
                          <div class="form-item2 form-itemCmn">
+                            <label for="#">Email</label>
+                            <input type="text" name="email1" id="email" placeholder="Emails" required>
+                         </div>
+                         <div class="form-item3 form-itemCmn">
+                            <label for="#">Email</label>
+                            <select name="Select1" id="Select1">
+                                <option value="">Select Country</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Italy">Italy</option>
+                                <option value="India">India</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                            </select>
+                          </div>
+                          <div class="form-item4 form-itemCmn">
+                            <label for="#">Contact Number</label>
+                            <input type="number" name="number2" id="Number2" placeholder="Contact Number" required >
+                         </div>
+                         <div class="form-item5 form-itemCmn">
                             <label for="#">Password</label>
                             <input type="password" name="password" id="password1" placeholder="Password" required>
                          </div>
-                         <div class="form-item3 form-itemCmn"> 
-                             <input type="submit" id="Submit1" value="Login">
+                         <div class="form-item6 form-itemCmn"> 
+                             <input type="submit" id="Submit1" value="Sign up">
                          </div>
                      </div>
-                     <div class="form-btn">
-                         <a href="javascript:void(0)">  Forgot Password  </a>
-                         <p>New User? &nbsp;  <a href="signup.html">  Signup Now  </a></p> 
+                     <div class="form-btn"> 
+                         <p>Already a User? <a href="login.html">&nbsp; LOGIN </a></p>
+                         
                      </div>
                  </form>
              </div>
              <div class="Log02 Log-cmn">
                  <figure>
-                     <img src="image/login.png" alt="img">
+                     <img src="image/signup.png" alt="img">
                  </figure>
              </div>
          </div>
