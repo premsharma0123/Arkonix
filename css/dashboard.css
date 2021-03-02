@@ -77,7 +77,7 @@ li {
   height: 100vh;
   background: #061BB0;
   padding: 2rem 0 1rem;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -244,5 +244,290 @@ li {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: .77;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-active {
+  border-radius: 5px;
+  background: #ffffff8f !important;
+  -webkit-box-shadow: inset 0 0 9px 9px #9999995c;
+          box-shadow: inset 0 0 9px 9px #9999995c;
+  padding: 1rem 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #9999994f;
+  padding: 2rem 0 1rem;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li {
+  margin-right: 1rem;
+  padding: 1rem 0;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li:hover {
+  background: #eeeeee63;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li:hover .img {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li a {
+  text-decoration: none;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li a h2 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  line-height: 1.5;
+  word-spacing: 1px;
+  font-weight: bold;
+  color: #061bb0;
+  padding: .5rem 0 .2rem;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bit-tabs-wrp .Bit-unorder li a figure img {
+  max-width: 39%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp {
+  padding: 1rem 0 2rem;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .bitCn-heading h2 {
+  color: #061BB0;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  line-height: 1.5;
+  padding: .5rem 0;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .bitCn-heading h2::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #061BB0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn {
+  padding: 1rem 1rem;
+  background: #eeeeee63;
+  border: 2px dotted #061bb0;
+  border-radius: 5px;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 {
+  width: 48%;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #061BB0;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 figure h2 {
+  font-size: 1.6em;
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #f6921a;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 figure h2 sup {
+  font-size: 14px;
+  vertical-align: top;
+  padding-left: 1px;
+  color: #000;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 figure span {
+  font-size: 15px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  display: block;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 img {
+  max-width: 58%;
+  -webkit-animation: Danime 3s linear infinite;
+          animation: Danime 3s linear infinite;
+}
+
+@-webkit-keyframes Danime {
+  0%, 100% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  50% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: drop-shadow(1px 1px 2px #999);
+            filter: drop-shadow(1px 1px 2px #999);
+  }
+}
+
+@keyframes Danime {
+  0%, 100% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  50% {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: drop-shadow(1px 1px 2px #999);
+            filter: drop-shadow(1px 1px 2px #999);
+  }
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 h3 {
+  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  padding: .3rem .5rem .3rem 0;
+  margin: .5rem 0 0;
+  background: #061BB0;
+  color: #ffffff;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b-cmn05 h3::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: #eeeeee94;
+  position: absolute;
+  -webkit-animation: backgrdanime 3s linear infinite;
+          animation: backgrdanime 3s linear infinite;
+  top: 0;
+  left: 0%;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .B-top .b2 {
+  text-align: right;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .Bit__Unord {
+  margin: 1rem 0;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .Bit__Unord li {
+  text-align: center;
+  padding: .5rem 0;
+  border-bottom: 1px dotted #061BB0;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #999;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .Bit__Unord li a {
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding: .7rem 1.9rem;
+  border-radius: 5px;
+  background: #061BB0;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .Bit__Unord li .hvr-bounce-to-top::before {
+  background: #EEBA2B;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=dashboard.css.map */

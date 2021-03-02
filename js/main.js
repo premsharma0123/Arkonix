@@ -97,11 +97,18 @@ $('.P-Btn').click(function(){
     $('.srv4').toggle();
 })
 
-
+  // add & Remove class
+  $(".bit-cmn").click(function () {
+    if(!$(this).hasClass('Bit-active'))
+    {    
+        $(".bit-cmn.Bit-active").removeClass("Bit-active");
+        $(this).addClass("Bit-active");        
+    }
+    });
 
 
 })
-  
+
   
 function openList(ListName) {
     var i;
@@ -112,3 +119,14 @@ function openList(ListName) {
     document.getElementById(ListName).style.display = "block";  
 }
 //-----temp--list---//
+
+//---bit--coin--tab--//
+
+function bitcoinTab(ListName) {
+    var i;
+    var x = document.getElementsByClassName("Bitcoin-Cnt-wrp");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    document.getElementById(ListName).style.display = "block";  
+}
