@@ -2946,6 +2946,17 @@ li {
   padding: 2rem 0 0rem;
 }
 
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading .Edit2 {
+  display: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: .7rem 2.5rem;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading .Edit1 {
+  padding: .7rem 2.5rem;
+}
+
 .Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading h2 {
   font-size: 1.7em;
   text-transform: capitalize;
@@ -2956,6 +2967,14 @@ li {
   padding: 0 0 1rem;
 }
 
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading .ProActive-btn .Edit1 {
+  display: none;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading .ProActive-btn .Edit2 {
+  display: block;
+}
+
 .Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading a {
   text-transform: capitalize;
   font-size: 1.1em;
@@ -2964,7 +2983,6 @@ li {
   display: inline-block;
   background: #061BB0;
   border-radius: 5px;
-  padding: .7rem 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3017,6 +3035,10 @@ li {
 
 .Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption {
   padding: 1.7rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption .fg-p1 {
+  padding-bottom: .8rem;
 }
 
 .Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption .fg-p1 h3 {

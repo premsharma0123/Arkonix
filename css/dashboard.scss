@@ -404,6 +404,13 @@
                 align-items: inherit;
                 border-bottom: 1px solid #999;
                 padding: 2rem 0 0rem;
+                .Edit2{
+                    display: none;
+                    font-size: 1.3em;
+                    font-weight: $bld; 
+                    padding: .7rem 2.5rem;
+                }
+                .Edit1{     padding: .7rem 2.5rem;}
                 h2{
                     font-size: 1.7em;
                     text-transform: $cap;
@@ -413,6 +420,10 @@
                     border-bottom: 3px solid $site-color;
                     padding: 0 0 1rem;
                 }
+                .ProActive-btn{
+                    .Edit1{display: none;}
+                    .Edit2{display: block;}
+                }
                 a{
                     text-transform: $cap;
                     font-size: 1.1em;
@@ -421,10 +432,13 @@
                     display: $inline-b;
                     background:$site-color; 
                     border-radius: 5px;
-                    padding: .7rem 2.5rem; 
+                    // padding: .7rem 2.5rem; 
                     display: flex;
                     align-items: center;
-                    text-decoration: none;
+                    text-decoration: none; 
+                }
+                .ProActive-btn{
+
                 }
                 .hvr-bounce-to-top{
                     &::before{
@@ -452,6 +466,7 @@
                    figcaption{
                        padding: 1.7rem 0 0;
                        .fg-p1{
+                           padding-bottom: .8rem;
                            h3{
                                font-size: 1em;
                                text-transform: $cap;

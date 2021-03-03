@@ -40,6 +40,16 @@ $(".Main-left-side").mouseleave(function(){
 $(".dash-item3").click(function(){
     $(".profile").slideToggle("");
 })
+
+$(".ProBTN").click(function(){
+    $(this).toggleClass("ProActive-btn");
+})
+$(".Edit1").click(function(){
+    $(".Parent-Pro-tab").css("display","none");
+})
+$(".Edit2").click(function(){
+    $(".Parent-Pro-tab").css("display","block");
+})
 // ---product-wrp========-
 
 $('.Product-wrp').click(function(){
