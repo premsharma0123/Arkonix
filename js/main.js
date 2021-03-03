@@ -34,7 +34,12 @@ $(".Banner-Wrapper").click(function(){
 })
 // ---end--here----//
 
-
+$(".Main-left-side").mouseleave(function(){
+ $( ".profile").slideUp("");
+})
+$(".dash-item3").click(function(){
+    $(".profile").slideToggle("");
+})
 // ---product-wrp========-
 
 $('.Product-wrp').click(function(){

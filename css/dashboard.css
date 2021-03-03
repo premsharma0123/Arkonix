@@ -72,6 +72,10 @@ li {
           justify-content: space-between;
 }
 
+.Dashboar-Wrapper .dashboard-content .main_hvr-Cls .profile {
+  display: none;
+}
+
 .Dashboar-Wrapper .dashboard-content .Main-left-side {
   width: 74px;
   height: 100vh;
@@ -107,11 +111,45 @@ li {
   margin: 0 auto;
 }
 
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .profile {
+  display: none;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .profile .profile-unord {
+  padding: 1rem;
+  background: #fffffffa;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .profile .profile-unord .pro-cmn {
+  padding: .5rem;
+  text-align: justify;
+  text-transform: capitalize;
+  font-size: 1em;
+  background: #eee;
+  margin: .5rem 0;
+  border-radius: 5px;
+  padding: .5rem .5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .profile .profile-unord .pro-cmn:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: rgba(153, 153, 153, 0.589);
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .profile .profile-unord .pro-cmn a {
+  color: #061bb0;
+  text-decoration: none;
+}
+
 .Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-item1 {
   background: #00000021 !important;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 {
   padding: 1.1rem 0;
   border-bottom: 1px solid #ffffff3b;
   overflow: hidden;
@@ -126,13 +164,18 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li:hover {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 i.fas.fa-angle-down {
+  vertical-align: middle;
+  padding: 0 .3rem;
+}
+
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1:hover {
   background: #00000021 !important;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a {
   color: #fff;
   text-decoration: none;
   padding: 0 1.3rem;
@@ -144,14 +187,14 @@ li {
           align-items: center;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a .Icon {
   padding: 0px;
   width: 25px;
   font-size: 1.4em;
   margin-right: 1.3rem;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon img {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a .Icon img {
   width: 50px;
   -webkit-transform: translateX(-13px);
           transform: translateX(-13px);
@@ -161,14 +204,14 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .Icon img:hover {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a .Icon img:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-filter: inherit;
           filter: inherit;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .text-btn {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a .text-btn {
   font-size: 1.2em;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -176,7 +219,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder li a .text-btn img {
+.Dashboar-Wrapper .dashboard-content .Main-left-side .Dashboard-unorder .dash-cmn1 a .text-btn img {
   max-width: 100%;
 }
 
@@ -529,5 +572,234 @@ li {
 .Dashboar-Wrapper .dashboard-content .Main-right-side .Rt-content-wrp .Bitcoin-Cnt-wrp .Bit-child-wrp .Bit-Cmn .Bit__Unord li .hvr-bounce-to-top::before {
   background: #EEBA2B;
   border-radius: 5px;
+}
+
+.Profile-Wrapper .main-Profile-wrp {
+  width: 100%;
+  padding: 1rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .profile-heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.Profile-Wrapper .main-Profile-wrp .profile-heading a {
+  margin: 0 1rem 0 0;
+  display: inline-block;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+  padding: .6rem 2.5rem;
+  border-radius: 5px;
+  border-bottom: 2px solid;
+  background: #061bb0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Profile-Wrapper .main-Profile-wrp .profile-heading .hvr-bounce-to-top::before {
+  background: #EEBA2B;
+  border-radius: 3px;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  border-bottom: 1px solid #999;
+  padding: 2rem 0 0rem;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading h2 {
+  font-size: 1.7em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+  color: #000;
+  border-bottom: 3px solid #061BB0;
+  padding: 0 0 1rem;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading a {
+  text-transform: capitalize;
+  font-size: 1.1em;
+  color: #ffffff;
+  word-spacing: 1px;
+  display: inline-block;
+  background: #061BB0;
+  border-radius: 5px;
+  padding: .7rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Pro-tab-heading .hvr-bounce-to-top::before {
+  background: #EEBA2B;
+  border-radius: 3px;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  padding: 2rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 {
+  width: 30%;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figure {
+  border: 1px solid #99999954;
+  border-radius: 5px;
+  padding: .5rem;
+  text-align: center;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figure img {
+  max-width: 100%;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption {
+  padding: 1.7rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption .fg-p1 h3 {
+  font-size: 1em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+  color: #646464;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P1 figcaption .fg-p1 p {
+  color: #9e9e9e;
+  padding: .5rem 0;
+  font-size: 15px;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 {
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .proheading {
+  padding: 1rem;
+  width: 100%;
+  background: #061BB0;
+  border-radius: 5px;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .proheading h2 {
+  font-size: 1.8em;
+  word-spacing: 1px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .proheading h4 {
+  font-size: 15px;
+  word-spacing: 1px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: .3rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .pro-cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .pro-cnt .ProL-cmn figcaption {
+  padding: 1.7rem 0 0;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .pro-cnt .ProL-cmn figcaption .fg-p1 {
+  padding: 0 0 1rem;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .pro-cnt .ProL-cmn figcaption .fg-p1 h3 {
+  font-size: 1em;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
+  color: #646464;
+}
+
+.Profile-Wrapper .main-Profile-wrp .Profile-content .Profile-sub-child-wrp .Pro--P2 .pro-cnt .ProL-cmn figcaption .fg-p1 p {
+  color: #9e9e9e;
+  padding: .8rem 0;
+  font-size: 15px;
+  text-transform: capitalize;
+  word-spacing: 1px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=dashboard.css.map */
