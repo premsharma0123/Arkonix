@@ -45,10 +45,12 @@ $(".ProBTN").click(function(){
     $(this).toggleClass("ProActive-btn");
 })
 $(".Edit1").click(function(){
-    $(".Parent-Pro-tab").css("display","none");
+    $("#Protab2").css("display","block");
+    $("#Protab1").css("display","none");
 })
 $(".Edit2").click(function(){
-    $(".Parent-Pro-tab").css("display","block");
+    $("#Protab1").css("display","block");
+    $("#Protab2").css("display","none");
 })
 // ---product-wrp========-
 
@@ -58,6 +60,16 @@ $('.Product-wrp').click(function(){
     $('.lang-model').slideUp();
     $('.Language').removeClass('lang-wrp');
 }); 
+// ======----DatePicker---=====
+
+$("#file1").change(function() {
+    filename = this.files[0].name
+    console.log(filename);
+  });
+
+
+// $( ".prdate" ).datepicker({ defaultDate: '01/01/01' });
+// $( ".prdate" ).datepicker({ defaultDate: new Date() });
 
 // ---end--here----//
 
@@ -145,3 +157,16 @@ function bitcoinTab(ListName) {
     }
     document.getElementById(ListName).style.display = "block";  
 }
+
+// function upload(){
+//     //get the input file
+//     var fileinput = document.getElementById("files");
+//     //get the canvas object
+//     var canvas = document.getElementById("can");
+//     //create an image from the file
+//     image0 = new SimpleImage(fileinput);
+//     // image1 = new SimpleImage(fileinput);
+//     // image2 = new SimpleImage(fileinput);
+//     // image3 = new SimpleImage(fileinput);
+//     image0.drawTo(canvas);
+// }

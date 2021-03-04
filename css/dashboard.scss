@@ -436,16 +436,56 @@
                     display: flex;
                     align-items: center;
                     text-decoration: none; 
-                }
-                .ProActive-btn{
-
-                }
+                } 
                 .hvr-bounce-to-top{
                     &::before{
                         background: #EEBA2B;
                         border-radius: 3px; 
                     }
                 }
+            }
+            #Protab2{
+             display: none;
+             .file-wrp{
+                 position: relative;
+                 overflow: hidden; 
+                     &:hover{
+                         transition: $transition;
+                         .upload{
+                             left: 0;
+                             transition: $transition;
+                             &:hover{ 
+                                 .btn{
+                                    transform: scale(.90);
+                                    transition: $transition;
+                                 }
+                             }
+                     } 
+                 }
+                 .upload{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;cursor: pointer;
+                    background: #eee;
+                    background: #04040491;
+                    left: 500px;
+                    top: 0; 
+                    @include flex;
+                    transition: $transition;
+                    cursor: pointer;
+                    // transform: scale(0);
+                    .btn{
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: $transition;
+                        width: 100%;
+                        height: 100%;
+                        @include flex;
+                    }
+                 }
+             }
             }
             .Profile-sub-child-wrp{
                 @include flex;
@@ -467,12 +507,33 @@
                        padding: 1.7rem 0 0;
                        .fg-p1{
                            padding-bottom: .8rem;
-                           h3{
+                           label{
                                font-size: 1em;
                                text-transform: $cap;
                                word-spacing: 1px;
                                line-height: 1.5;
                                color: #646464;
+                           }
+                           input{
+                            color: #9e9e9e; 
+                            padding: .7rem .5rem;
+                            text-transform: $cap;
+                            border: 1px solid #eee;
+                            font-size: 15px;
+                            transition: $transition;
+                            margin: .5rem 0;
+                            border-radius: 5px;
+                            width: 100%;
+                            outline: none;                            
+                            &:hover{
+                                border: 1px solid #999;
+                                transition: $transition;
+                            }
+                            &:focus{
+                                transition: $transition;
+                                box-shadow: 0 0 4px 1px #99999957;
+                                border: 1px solid #cecece;
+                            }
                            }
                            p{
                                color: #9e9e9e;
@@ -526,6 +587,27 @@
                                         line-height: 1.5;
                                         color: #646464;
                                     }
+                                    input{
+                                        color: #9e9e9e; 
+                                        padding: .7rem .5rem;
+                                        text-transform: $cap;
+                                        border: 1px solid #eee;
+                                        font-size: 15px;
+                                        transition: $transition;
+                                        margin: .5rem 0;
+                                        border-radius: 5px;
+                                        width: 100%;
+                                        outline: none;                            
+                                        &:hover{
+                                            border: 1px solid #999;
+                                            transition: $transition;
+                                        }
+                                        &:focus{
+                                            transition: $transition;
+                                            box-shadow: 0 0 4px 1px #99999957;
+                                            border: 1px solid #cecece;
+                                        }
+                                       }
                                     p{
                                         color: #9e9e9e;
                                         padding: .8rem 0;
@@ -543,3 +625,112 @@
         }
     }
 }
+
+//--------Cart-------Page--------------//
+//---*********************************-------//
+//---------------Cart-------Page--------------//
+.Cart-detail-wrp{
+    width: 100%;
+    .Cart-content{
+        width: 100%;
+        .cart-dtl{
+            .cart-item1{
+             li{
+                font-size: 1.1em;
+                text-transform: $upper;
+                word-spacing: 2px;
+                letter-spacing: 0px;
+                color: #000;
+             }
+            }
+            .cart-unorder{
+                @include flex;
+                justify-content: $between;
+                border-bottom: 1.5px solid $site-color;
+                li{
+                    list-style-type: $none;
+                    padding: .9rem 0;
+                    width: 24%; 
+                }
+                .cart-H-item4{
+                    .quanty-wrp{
+                        @include flex;
+                        justify-content: $between;
+                        .q1{
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .cart-item2{
+                border: inherit;
+                li{
+                    font-size: 1.1rem;
+                    word-spacing: 1px;
+                    text-transform: $cap;
+                    img{max-width: 18%;}
+                    h2{color: $site-color;}
+                    h3{
+                        padding: .4em .6em;border-radius: 5px;
+                        background: $site-color;
+                        color: $fff; display: $inline-b;
+                    }
+                    h4{
+                        padding: .3rem 1.5rem;
+                        border-radius: 5px;
+                        background: #D9D9D9;
+                        border-radius: 3px;
+                    }
+                    p{color: #999;}
+                    .Qt-btn{
+                        padding: .5rem;
+                        border: 1px solid #fff;
+                        background: #061bb0;
+                        color: #fff;
+                        border-radius: 4px;
+                        cursor: pointer;transition: $transition;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        .fa-times{font-size: 15px;}
+                        &:hover{
+                            transition: $transition;
+                            background: #EEBA2B;
+                        }
+                    }
+                }
+            }
+            // ----item--3--//
+            .cart-item3{
+                 border-top: 1.5px solid #061bb0;
+                 margin: 1.9rem 0 0;
+                li{
+                    input{
+                        padding: .6rem .5rem;
+                        text-transform: $cap;
+                        color:#061bb0;
+                        border: 1px solid $site-color;
+                        outline: none;
+                        transition: $transition;
+                        border-radius: 5px;
+                        &::placeholder{color:#061bb0;}
+                        &:focus{
+                            transition: $transition;
+                            box-shadow: 0 0 2px 1px rgb(122, 142, 255); 
+                        }
+                    }
+                    .quanty-wrp{
+                       .q1{
+                           @include flex;
+                           justify-content: space-between;
+                           h5{color: #061bb0; padding-right: 1rem;}
+                           p{color: #999;}
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//---------end------Cart-------Page-----here-------------
