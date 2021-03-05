@@ -90,7 +90,7 @@ main{
                     border-bottom-left-radius: 5px;
                     border-bottom-right-radius: 5px;
                     top: 40px;
-                    left: 43px;
+                    left: 0;
                     z-index: 5;
                     width: 90%;  
                     display: $none;
@@ -153,9 +153,9 @@ main{
                 } 
 
                 .R01{
-                    width: 21%;position:$rel;
+                    width: 25%;position:$rel;
                    ul{
-                       justify-content: $Fend;
+                       justify-content:flex-end!important;
                        li{ 
                            a{
                                color: #000!important;
@@ -217,7 +217,7 @@ main{
                     // width: 50%;
                     ul{
                         @include flex;
-                        justify-content: $around;
+                        justify-content: $between;
                         li{
                            padding: .5rem 1rem;
                            a{
@@ -453,7 +453,7 @@ main{
             width: 50%;
             transform: translateY(-28px);
             h2{
-                font-size: 1.1em;
+                font-size: 1em;
                 text-transform: $cap;
                 letter-spacing: 1px;
                 word-spacing: 1px; 
@@ -1654,4 +1654,10 @@ footer{
 
 //---------end------Signup-------Page-----here-------------
 
+.main-bar{
+    display: none;
+}
+
+
 @import 'dashboard';    
+@import 'media';

@@ -1,0 +1,129 @@
+@media only screen and (max-width: 1300px) {
+  main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+    font-size: 2.5em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+    padding: .8rem 2.1rem .8rem 1.5rem;
+    font-size: 1.3em;
+  }
+  main .Banner-Wrapper .Banner-content {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li p {
+    text-shadow: 1px -1px 1px #fff;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-bar {
+    right: 40px;
+    top: 39px;
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+  }
+  .main-bar div {
+    width: 35px;
+    height: 4px;
+    margin: 6px 0;
+    background-image: linear-gradient(45deg, #061bb0, #061bb0);
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+  }
+  .active-bar {
+    top: 47px;
+  }
+  .active-bar .a {
+    -webkit-transform: rotateZ(43deg);
+            transform: rotateZ(43deg);
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+  }
+  .active-bar .b {
+    opacity: 0;
+  }
+  .active-bar .c {
+    -webkit-transform: rotateZ(-46deg);
+            transform: rotateZ(-46deg);
+    top: 0px;
+    position: absolute;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+    margin: 6px 0 0 0px;
+  }
+  .my-nav {
+    width: 100% !important;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 99px;
+    overflow-x: hidden;
+    display: none;
+    left: 0px;
+    background: linear-gradient(150deg, #061bb0 15%, #061bb0 70%, #061bb0 94%);
+    text-align: center;
+    border-bottom: 3px solid #fcfcfca8;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1rem 0 0;
+  }
+  main header .header-content nav .nav-item-wrp .L01 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main header .header-content nav .nav-item-wrp .L01 ul {
+    display: block !important;
+  }
+  main header .header-content nav .nav-item-wrp .nav-cmn ul li {
+    padding: 1rem 1rem;
+    display: block;
+    border-bottom: 1px solid #ffffff30;
+  }
+  main header .header-content nav .nav-item-wrp .R01 ul {
+    display: block !important;
+    width: 100%;
+  }
+  main header .header-content nav .nav-item-wrp .R01 {
+    width: 100%;
+    position: relative;
+  }
+  main header .header-content nav .nav-item-wrp .R01 ul li a {
+    color: #fff !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  main header .header-content nav .nav-item-wrp .hvr-underline-from-center::before {
+    background: #ffffff;
+    height: 1px;
+  }
+  main header .header-content nav .nav-item-wrp .R01 ul li a:hover {
+    color: #ffffff !important;
+  }
+  main header .header-content nav .nav-item-wrp .R01 .lang-model {
+    position: relative;
+    right: 0;
+    width: 100%;
+    background: #061BB0;
+    -webkit-box-shadow: 0 1px 1px 1px #7f7f7f;
+            box-shadow: 0 1px 1px 1px #7f7f7f;
+  }
+  main header .header-content nav .nav-item-wrp .L01 .Product-List {
+    position: relative;
+    background: white;
+    border-right: 1px solid #999999a6;
+    top: 0px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child {
+    -webkit-box-shadow: 0 2px 2px 0px #d6d6d6ba;
+            box-shadow: 0 2px 2px 0px #d6d6d6ba;
+  }
+  .Language i.fas.fa-chevron-down {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

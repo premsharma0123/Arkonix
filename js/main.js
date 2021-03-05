@@ -133,6 +133,12 @@ $('.P-Btn').click(function(){
     }
     });
 
+    // ---nav--bar---//
+
+      $(".main-bar").click(function(){
+          $(this).toggleClass('active-bar');
+          $(".my-nav").slideToggle("");
+      })
 
 })
 

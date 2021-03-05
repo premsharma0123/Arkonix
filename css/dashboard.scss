@@ -792,3 +792,57 @@
 
 
 //---------end------Cart-------Page-----here-------------
+
+//--------Privacy-------Page--------------//
+//---*********************************-------//
+//---------------Privacy-------Page--------------//
+.Privacy-Wrapper{
+    header .header-content nav .nav-item-wrp .nav-cmn ul li a{
+        color: #000!important;
+    }
+    header .header-content nav .nav-item-wrp .hvr-underline-from-center::before{
+     background: #000!important;   
+    }
+    .Privacy-content-wrp{
+      width: 100%;
+      position: relative;
+      .Privacy-heading{
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0 2rem;
+          h2{
+            font-size: 1.9em;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            text-transform: capitalize;
+            font-weight: bold;
+            text-align: center; 
+            text-transform: uppercase;
+            span{
+                color:$site-color;
+            }
+          }
+      }
+      .Privacy-child-cnt{
+          padding: 1rem 0 4rem;
+          p{
+              font-size: 1em;
+              text-transform: $cap;
+              line-height: 1.5; 
+              padding: .5rem 0;
+              color: #999;
+          }
+          h2{
+              font-size: 1.3em;
+              text-transform: $cap;
+              line-height: 1.5;
+              letter-spacing: 1px;
+              padding: .5rem 0;
+              color: #000;
+          }
+      }
+    }
+}
+
+//---------------Privacy-------Page--------------//
