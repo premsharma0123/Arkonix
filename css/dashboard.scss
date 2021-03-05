@@ -728,6 +728,64 @@
                     }
                 }
             }
+            //------item---4---//
+            .cart-item4{
+                li.cart-H-item3 {
+                    display: flex;
+                    align-items: center;
+                     h3 {
+                        padding: 0 .8rem;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        line-height: 1.5;
+                    }
+                    input{cursor: pointer;}
+                    a{
+                        text-decoration: $none;
+                        transition: $transition;
+                        color: #061bb0;
+                        text-transform: $cap;
+                        font-size: 1em;
+                        word-spacing: 1px;
+                        line-height: 1.5;
+                        &:hover{
+                        transition: $transition;
+                        color: #000;
+                        text-decoration: underline;
+                        }
+                    }
+                }
+                .cart-H-item4{
+                  .quanty-wrp{
+                      display: flex;
+                      align-items: center;
+                      justify-content: center!important;
+                      >.q1{
+                          display: flex;
+                          align-items: center;
+                          margin: 0 .5rem;
+                          transition: all 0.3s ease-in-out;
+                          button{
+                            padding: .5rem;
+                            border: 1px solid #fff;
+                            background: #061bb0;
+                            color: #fff;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+                            font-size: 1em;
+                            word-spacing: 1px;
+                            outline: none;
+                            &:hover{
+                            transition: all 0.3s ease-in-out;
+                            color: #000;
+                            background: #EEBA2B;
+                            }
+                          }
+                      }
+                  }  
+                }
+            } 
         }
     }
 }
