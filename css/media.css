@@ -125,5 +125,127 @@
   .Language i.fas.fa-chevron-down {
     font-size: 14px;
   }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+    width: 70%;
+  }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 figure img {
+    max-width: 63%;
+  }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 h2 {
+    font-size: 1.2em;
+  }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 h2 span {
+    width: 33px;
+    height: 33px;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-heading label select {
+    font-size: 1.2em;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 h3 sup {
+    font-size: 11px;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading p {
+    font-size: 1em;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+    font-size: 2.3em;
+    padding: .6rem 0;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+    padding: .8rem 1rem;
+    font-size: 1.1em;
+    margin: 0 0 1rem;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .qnt-cmn .Package-cmn p {
+    font-size: 13px;
+    padding: .3rem 0 0;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1.1em;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button .fa-arrow-alt-circle-right {
+    font-size: 17px;
+    margin: 0 .5rem 0 0;
+    vertical-align: text-bottom;
+  }
+  main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 p {
+    font-size: 15px;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+    font-size: 2.3em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+    font-size: 1em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft p br {
+    display: none;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-heading label select {
+    font-size: 1.1em;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-heading h2 {
+    font-size: 1.1em;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-left {
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-Right {
+    width: 100%;
+    display: inline-block !important;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 ul li a {
+    font-size: 15px;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+    padding: .8rem 1rem;
+    font-size: 1em;
+    margin: 0 0 1rem;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+    font-size: 2.1em;
+    padding: .4rem 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+    width: 100%;
+    padding: .8rem 1rem;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+    width: 100%;
+    padding: .8rem 1rem;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+    font-size: 2.2em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+    padding: .8rem 2rem .8rem 1.5rem;
+    font-size: 1.2em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft a i.fas.fa-arrow-right {
+    padding: .5rem;
+    font-size: 10px;
+    vertical-align: bottom;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+    line-height: 1.7;
+  }
 }
 /*# sourceMappingURL=media.css.map */
