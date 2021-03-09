@@ -192,6 +192,9 @@
         padding: .8rem 1rem;
         transform: translateY(-25px);
     }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure {
+        transform: translateY(-9px);
+    }
 }
 @media only screen and(max-width:767px){
     main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
@@ -213,5 +216,102 @@
     }
     main .Banner-Wrapper .Banner-content .Bnr-Lft p {
       line-height: 1.7; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
+        width: 31%;
+        padding: .7rem .9rem; 
+        margin: .6rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp {
+        width: 80%; 
+        padding: 1rem;  
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading p {
+        font-size: 15px;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
+        font-size: 2em;
+        padding: .4rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h3 {
+        padding: .6rem 1rem;
+        font-size: 15px; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button .fa-arrow-alt-circle-right {
+        font-size: 17px;
+        margin: 0 1rem 0 0; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-content .button button {
+        padding: 1rem 1.5rem; 
+        font-size: 1em;
+    }
+    main .About-wrapper { 
+        margin: 3rem 0;    padding: 2rem 0;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure {
+        transform: translateY(0px);
+    }
+    main footer .footer-content-wrp .Ft-logo-heading {
+        width: 100%; padding: 2rem 0;
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head h2 {
+        font-size: 1.1em; 
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 .Ft-head {
+        padding: 0 0 1rem;
+    }  
+    main .Banner-Wrapper .Banner-content .Bnr-Lft {
+        width: 100%;    padding: 1rem 0 0rem;
+    } 
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt {
+        width: 100%;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+        max-width: 100%; 
+    }
+}
+
+@media only screen and(max-width:576px){
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 2em;
+    }
+    main .Banner-Wrapper .bg-banr { 
+        right: 25vw; 
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+        transform: translateY(-35px);
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 figure img {
+        max-width: 90%;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 {
+        width: 48%;
+        margin: .7rem auto;
+        text-align: center;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp{
+        align-items: inherit;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading label select option {
+        padding: .7rem .2rem;
+        font-size: 1rem; 
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
+        width: 47%;
+        padding: .7rem .9rem;
+        margin: .6rem 0;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp {
+        width: 100%;
+        padding: 1rem;
+    } 
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 {
+        width: 100%; padding: .5rem 0;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .Abt01.abt-cmn01 > figure{
+        text-align: center;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+        max-width: 67%; 
     }
 }
