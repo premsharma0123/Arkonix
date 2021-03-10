@@ -3968,5 +3968,29 @@ li {
     display: inline-block !important;
     padding: 1.5rem 0;
   }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 {
+    width: 100%;
+  }
+  main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 figure img {
+    max-width: 52%;
+  }
+  main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
+    width: 80%;
+    padding: .7rem .9rem;
+    margin: .9rem auto;
+  }
+  main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+    max-width: 75%;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
+    width: 26%;
+    margin: 10px 10px;
+  }
+  main footer .copyright-wrp .copyright-content p {
+    letter-spacing: .5px;
+  }
+  main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure img {
+    max-width: 70%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
