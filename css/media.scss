@@ -285,25 +285,19 @@
         max-width: 90%;
     }
     main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 {
-        width: 48%;
-        margin: .7rem auto;
-        text-align: center;
+        width: 48%;  margin: .7rem auto; text-align: center;
     }
     main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp{
         align-items: inherit;
     }
     main .Currency_Wrapper .Currency-content .Currency-heading label select option {
-        padding: .7rem .2rem;
-        font-size: 1rem; 
+        padding: .7rem .2rem;  font-size: 1rem; 
     }
     main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
-        width: 47%;
-        padding: .7rem .9rem;
-        margin: .6rem 0;
+        width: 47%;  padding: .7rem .9rem;  margin: .6rem 0;
     }
     main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp {
-        width: 100%;
-        padding: 1rem;
+        width: 100%;  padding: 1rem;
     } 
     main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 {
         width: 100%; padding: .5rem 0;
@@ -315,23 +309,19 @@
         max-width: 67%; 
     }
     main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
-        width: 26%;
-        margin: 10px auto;
+        width: 26%; margin: 10px auto;
     }
 }
 
 @media only screen and (max-width:480px){
     main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 {
-        text-align: left;
-        width: 100%;
-        margin: 0 0 auto auto;
+        text-align: left; width: 100%; margin: 0 0 auto auto;
     }
     main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 .List_active a img {
-          filter: hue-rotate( 42deg  )!important; 
+        filter: brightness(93.5)!important;
     }
     main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 li {
-        display: inline-block!important;
-        padding: 1.5rem 0;
+        display: inline-block!important;   padding: 1.5rem 0;
     }
     main .Market-Strategy_wrapper .Market-Str-content .Mrt-Cnt_wrp .Mrt-cmn02 {
         width: 100%; 
@@ -340,21 +330,85 @@
         max-width: 52%;
     }
     main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .Currency-unorder .C-item-cmn01 {
-        width: 80%;
-        padding: .7rem .9rem;
-        margin: .9rem auto;
+        width: 80%; padding: .7rem .9rem;  margin: .9rem auto;
     }
     main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
         max-width: 75%;
     }
     main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
-        width: 26%;
-        margin: 10px 10px;
+        width: 26%;  margin: 10px 10px;
     }
     main footer .copyright-wrp .copyright-content p { 
         letter-spacing: .5px; 
     }
     main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure img {
         max-width: 70%;
+    }
+}
+@media only screen and (max-width:375px){
+    main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li p{
+        padding-left: 0;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft h1, main .Banner-Wrapper .Banner-content .Bnr-Lft h2 {
+        font-size: 1.7em;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft p {
+        line-height: 1.7; padding: .7rem 3rem .7rem 0;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft a {
+        padding: .7rem 1.2rem .7rem 1.2rem;  font-size: 1.1em;
+    }
+    main .Banner-Wrapper .Banner-content .Bnr-Lft a i.fas.fa-arrow-right {
+        padding: .3rem; font-size: 8px;
+        vertical-align: middle; margin: 0 .3rem 0 0;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading h2 {
+        font-size: 15px;   letter-spacing: .4px;
+        word-spacing: 1px; line-height: 1.6;
+    }
+    main .Market-Strategy_wrapper .Market-Str-content .Mrt-heading {
+        transform: translateY(-31px);
+        padding: .4rem 1rem;
+    }
+    main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
+        width: 33%;
+        margin: 10px 10px;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 h2 {
+        font-size: 1.3em;  
+        line-height: 1.5;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
+        max-width: 80%;
+    }
+    main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 p {
+        font-size: 15px;
+        padding: .8rem 0;
+    }
+    main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child .item-cmn .list-heading h2 {
+        font-size: 1.1em; 
+    }
+    main header .header-content nav .nav-item-wrp .L01 .Product-List .Product-child .item-cmn ul li a{
+        font-size: 15px;
+    }
+    main header .header-content nav .nav-item-wrp .nav-cmn ul li a{
+        font-size: 1em;
+    }
+    .main-bar {
+        right: 24px;  top: 30px;
+    }
+    .main-bar div {
+        width: 33px;  height: 3px;
+        margin: 6px 0; 
+    }
+    main header .header-content .logo img {
+        max-width: 77%;
+    } 
+    .active-bar {
+        top: 36px!important;
+    }
+    main .Currency_Wrapper .Currency-content .Currency-heading h2 {
+        font-size: 1.1em;
+        padding: 0 0 1rem;
     }
 }
