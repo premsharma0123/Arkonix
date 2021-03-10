@@ -176,6 +176,35 @@
   main footer .footer-content-wrp .footer-cnt .Ft-Right .Ft-head h2 {
     font-size: 1.2em;
   }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Lft {
+    display: none;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt {
+    width: 45%;
+    margin: 2rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figcaption p {
+    font-size: 1em;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .p2 {
+    font-size: 14px;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-heading .remaining {
+    right: -88px;
+    top: -36px;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt a {
+    font-size: 1.1em;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco--heading {
+    width: 50%;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper {
+    padding: 2rem 0 4rem;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button {
+    padding: 1rem 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -213,6 +242,18 @@
   main .Currency_Wrapper .Currency-content .Currency-Cnt-wrp .quantity-wrp .quantity-heading h2 {
     font-size: 2.1em;
     padding: .4rem 0;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt {
+    width: 50%;
+    margin: 2rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 2rem;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper .Contact-content .cont-cmn01 figure img {
+    max-width: 75%;
   }
 }
 
@@ -307,6 +348,40 @@
   main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
     max-width: 100%;
   }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt {
+    width: 75%;
+    margin: 2rem 0 0;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer a {
+    padding: .8rem 1rem;
+    margin: 1rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content {
+    grid-gap: 1rem;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper .Contact-content .cont-cmn01 figure img {
+    max-width: 100%;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem 1rem;
+    padding: 0rem 1rem;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco--heading {
+    width: 60%;
+    padding: .8rem 1rem;
+    -webkit-transform: translateY(-26px);
+            transform: translateY(-26px);
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco--heading h2 {
+    font-size: 1.1em;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -360,6 +435,71 @@
     width: 26%;
     margin: 10px auto;
   }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt {
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 {
+    font-size: 2.3em;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 sup {
+    font-size: 17px;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer .p1 {
+    font-size: 15px;
+    margin: 0 0 .5rem;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper {
+    padding: 2rem 0 1rem;
+    margin: 3rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .Sr-Right.SR-cmn01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper .Contact-content .cont-cmn01 {
+    width: 100%;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper .Contact-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco--heading {
+    width: 80%;
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+    margin: 0 auto;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper .Contact-content .cont-cmn01 figure img {
+    max-width: 67%;
+    padding: 0 0 1rem;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btc-pay-offer a {
+    padding: .7rem 1rem;
+    margin: 1rem 0 0;
+    font-size: 1.1em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp {
+    padding: 1rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn {
+    padding: 2rem 0 1rem;
+    width: 100%;
+  }
+  .BTC-Main-Wrapper .Contract-Wrapper {
+    padding: 2rem 0 2rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -399,6 +539,18 @@
   }
   main footer .footer-content-wrp .footer-cnt .Ft-Right .social-wrp figure img {
     max-width: 70%;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button {
+    padding: .8rem 1rem;
+    font-size: 15px;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .plans-btn button i.fas.fa-chevron-down {
+    font-size: 14px;
+    margin: 0 .7rem 0 0;
   }
 }
 
