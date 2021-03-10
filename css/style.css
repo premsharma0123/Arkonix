@@ -4221,5 +4221,53 @@ li {
     font-size: 1.1em;
     padding: 0 0 1rem;
   }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 {
+    padding: .5rem 0 .5rem;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h4 {
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-right: 3.5rem;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 {
+    font-size: 2em;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .btP1 h3 sup {
+    font-size: 14px;
+  }
+  .BTC-Main-Wrapper .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li p {
+    padding-left: 0rem;
+    font-size: 1em;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .payment-wrp li img {
+    max-width: 100%;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper {
+    padding: 1rem 0 1rem;
+    margin: 2rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left {
+    grid-gap: .5rem;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figcaption h2 {
+    font-size: 1.3em;
+    line-height: 1.5;
+    word-spacing: 1px;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Service-content .Sr-Left figcaption p {
+    font-size: 15px;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder {
+    grid-gap: 1.8rem;
+    padding: 1.8rem 0 0;
+  }
+  .BTC-Main-Wrapper .BTC-Service-wrapper .Serivces-offer-wrp .Srv-unorder .Srv-offr .srv-cnt a {
+    padding: .7rem 1.2rem;
+    margin: 1rem 0 .5rem 4rem;
+  }
+  .BTC-Main-Wrapper .Arco_Wrapper .Main-Arco-content .Arco--heading {
+    -webkit-transform: translateY(-38px);
+            transform: translateY(-38px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
