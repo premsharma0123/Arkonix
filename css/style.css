@@ -3948,5 +3948,25 @@ li {
   main .About-wrapper .About-content-wrp .About-child-cnt .abt-cmn01 figure img {
     max-width: 67%;
   }
+  main footer .footer-content-wrp .footer-cnt .Ft-Wrp .Ft-cmn01 {
+    width: 26%;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 auto auto;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 .List_active a img {
+    -webkit-filter: hue-rotate(42deg) !important;
+            filter: hue-rotate(42deg) !important;
+  }
+  main .Banner-Wrapper .Banner-content .Bnr-Rgt .unorder01 li {
+    display: inline-block !important;
+    padding: 1.5rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
